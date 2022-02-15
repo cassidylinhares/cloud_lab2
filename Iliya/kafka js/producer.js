@@ -22,7 +22,7 @@ async function run(){
        
        const result = await producer.send({
 
-            "topic": "yeet", "messages": [{"value": "2nd msg","partition": 0}]
+            "topic": "something", "messages": [{"value": "demo","partition": 0}]
         });
 
         console.log(`Message sent: ${JSON.stringify(result)}`);
