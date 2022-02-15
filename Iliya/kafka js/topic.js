@@ -27,11 +27,19 @@ async function run(){
                 "topic": "yeet",
                 "numPartitions": 2,
                 "replicationFactor": 2
-            }, {
+            }, 
+            {
                 "topic": "something",
                 "numPartitions": 2,
                 "replicationFactor": 1
-            }]
+            },
+            {
+                "topic": "last",
+                "numPartitions": 2,
+                "replicationFactor": 3
+            }
+
+            ]
         })
         console.log("Nothing wrong so far")
         await admin.disconnect();
